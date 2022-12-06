@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name:       Accordion
  * Description:       Example block scaffolded with Create Block tool.
@@ -20,7 +21,15 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function rss_accordion_block_init() {
-	register_block_type( __DIR__ . '/build' );
+function rss_accordion_block_init()
+{
+	register_block_type(__DIR__ . '/build/accordion');
+	register_block_type(__DIR__ . '/build/accordion-row');
 }
-add_action( 'init', 'rss_accordion_block_init' );
+add_action('init', 'rss_accordion_block_init');
+
+function rss_accordion_block_scripts()
+{
+	wp_register_script('rss-accordion-js', plugin_dir_url(__FILE__) . 'build/accordion/script.js', null, '0.1.0', true);
+}
+add_action('init', 'rss_accordion_block_scripts');
