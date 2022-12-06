@@ -29,7 +29,7 @@ function rss_accordion_block_init()
 }
 add_action('init', 'rss_accordion_block_init');
 
-// Register the block's frontend script
+// Register the block's frontend script.
 function rss_accordion_block_scripts()
 {
 	wp_register_script('rss-accordion-js', plugin_dir_url(__FILE__) . 'build/accordion/script.js', null, '0.1.0', true);

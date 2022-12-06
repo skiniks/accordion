@@ -1,0 +1,8 @@
+html :where(.editor-styles-wrapper) {
+	.accordion-title {
+		pointer-events: auto;
+	}
+	.accordion-toggle {
+		cursor: auto;
+	}
+}
