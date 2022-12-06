@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "rss/accordion-row",
+	"version": "0.1.0",
+	"title": "Accordion Row",
+	"category": "widgets",
+	"parent": ["rss/accordion"],
+	"description": "Add a row to the accordion block.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"accordionId": {
+			"type": "string"
+		},
+		"accordionTitle": {
+			"type": "string",
+			"source": "text",
+			"selector": ".accordion-title"
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": ".accordion-panel > div",
+			"__experimentalRole": "content"
+		}
+	},
+	"textdomain": "accordion-row",
+	"editorScript": "file:./index.js"
+}
