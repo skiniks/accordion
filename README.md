@@ -1,6 +1,6 @@
 # Simple WordPress Accordion Block
 
-This plugin is a simple accordion for the WordPress Gutenberg block editor, consisting of two blocks: the accordion container, and the accordion-row. The accordion-row uses inner blocks to allow for any content to be used inside the accordion.
+This plugin is a simple accordion for the WordPress Gutenberg block editor, consisting of two blocks: the accordion container, and the accordion-row. The accordion-row block is a child block of the accordion container, and can be added as many times as you'd like. The accordion-row block can contain any content that you'd like, and the accordion container can be styled with CSS.
 
 ## Installation
 
@@ -8,7 +8,7 @@ You can install this plugin from the repository by downloading the zip file and 
 
 ## Usage
 
-Once installed, you'll see a new block in the Gutenberg editor called "Accordion". You can add as many accordion rows as you'd like, and each row can contain any content that you'd like. As is, the block is very simple, but it's a good starting point for more complex accordion blocks. The styling is very basic, and is intended to be overridden by your theme or edited and compiled with the plugin.
+Once installed, you'll see a new block in the Gutenberg editor called "Accordion". As is, the block is very simple, but it's a good starting point for more complex accordion blocks. The styling is very basic, and is intended to be overridden by your theme or edited and compiled with the plugin.
 
 ## License & Conduct
 
