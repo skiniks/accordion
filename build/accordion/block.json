@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "rss/accordion",
+  "version": "0.1.0",
+  "title": "Accordion",
+  "category": "widgets",
+  "icon": "editor-justify",
+  "description": "Accordion block with collapsible rows.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "accordion",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "script": [
+    "file:./script.js",
+    "rss-accordion-js"
+  ],
+  "style": "file:./style-index.css"
+}
